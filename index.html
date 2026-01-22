@@ -167,7 +167,7 @@
     function showNextQuote() {
       quoteElement.style.animation = 'none';
       quoteElement.offsetHeight; // Trigger reflow
-      currentIndex = (currentIndex + 1) % quotes.length;
+      currentIndex = Math.floor(Math.random() * quotes.length);
       quoteElement.textContent = quotes[currentIndex];
       quoteElement.style.animation = 'fadeInOut 4s ease-in-out';
     }
