@@ -7,9 +7,9 @@
   <meta name="description" content="TimeRemind helps people with ADHD stay on track with voice reminders, task breakdowns, and focus sessions.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/png" href="logo.png">
+  <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-    body { font-family: 'Inter', sans-serif; }
+    body { font-family: 'OpenDyslexic', sans-serif; }
 
     /* Fade animation for rotating quotes */
     @keyframes fadeInOut {
@@ -46,10 +46,13 @@
       </p>
     </div>
 
-    <!-- Description -->
-    <p class="text-slate-400 text-center max-w-xl mb-10">
-      Time announced out loud, because you forget to check — or that time even exists. Break overwhelming tasks into manageable steps with AI. Stay focused with virtual body doubling. Brain dump journaling so you can relax without forgetting (unless you forgot you journaled...sorry, we can't help with everything).
-    </p>
+    <!-- Description as Bullet Points -->
+    <ul class="text-slate-400 text-left max-w-3xl mb-10 space-y-2 text-lg">
+      <li>• Time announced out loud, because you forget to check — or that time even exists.</li>
+      <li>• Break overwhelming tasks into manageable steps with AI.</li>
+      <li>• Stay focused with virtual body doubling.</li>
+      <li>• Brain dump journaling so you can relax without forgetting (unless you forgot you journaled...sorry, we can't help with everything).</li>
+    </ul>
 
     <!-- Action Buttons -->
     <div class="flex flex-row gap-4 w-full max-w-2xl">
@@ -83,7 +86,7 @@
     </div>
 
     <!-- Features -->
-    <div class="mt-16 grid grid-cols-1 grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl">
+    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl">
       <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 text-center">
         <div class="text-3xl mb-3">🔊</div>
         <h3 class="font-semibold text-lg mb-2">Voice Reminders</h3>
@@ -102,7 +105,7 @@
       <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 text-center">
         <div class="text-3xl mb-3">📓</div>
         <h3 class="font-semibold text-lg mb-2">Brain Dump Journal</h3>
-        <p class="text-slate-400 text-sm">Get thoughts out of your head and onto the page. Relax without forgetting (unless you forgot you journaled).</p>
+        <p class="text-slate-400 text-sm">Get thoughts out of your head and onto the page. Relax without forgetting.</p>
       </div>
     </div>
 
