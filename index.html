@@ -11,7 +11,6 @@
   <style>
     body { font-family: 'OpenDyslexic', sans-serif; }
 
-    /* Fade animation for rotating quotes */
     @keyframes fadeInOut {
       0%, 100% { opacity: 0; transform: translateY(10px); }
       10%, 90% { opacity: 1; transform: translateY(0); }
@@ -23,31 +22,30 @@
 </head>
 <body class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 min-h-screen text-white">
 
-  <!-- Hero Section -->
-  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-8">
 
-    <!-- Logo -->
-    <img src="logo.png" alt="TimeRemind" class="w-32 h-32 rounded-2xl shadow-2xl mb-6">
-
-    <!-- Title -->
-    <h1 class="text-5xl md:text-6xl font-extrabold text-center mb-4">
-      <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">TimeRemind</span>
-    </h1>
+    <!-- Logo and Title side by side -->
+    <div class="flex items-center gap-6 mb-4">
+      <img src="logo.png" alt="TimeRemind" class="w-20 h-20 rounded-2xl shadow-2xl">
+      <h1 class="text-5xl md:text-6xl font-extrabold">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">TimeRemind</span>
+      </h1>
+    </div>
 
     <!-- Tagline -->
-    <p class="text-xl md:text-2xl text-slate-300 text-center max-w-2xl mb-4">
+    <p class="text-xl md:text-2xl text-slate-300 text-center max-w-2xl mb-2">
       ADHD-Friendly Task Management
     </p>
 
-    <!-- Rotating Time Blindness Quotes -->
-    <div class="h-16 flex items-center justify-center mb-4">
+    <!-- Rotating Quotes -->
+    <div class="h-12 flex items-center justify-center mb-4">
       <p id="rotating-quote" class="text-lg md:text-xl text-purple-300 italic text-center px-4 quote-fade">
         "I'll just do this one quick thing..." *3 hours later*
       </p>
     </div>
 
-    <!-- Description as Bullet Points -->
-    <ul class="text-slate-400 text-left max-w-5xl mb-10 space-y-2 text-lg">
+    <!-- Bullet Points -->
+    <ul class="text-slate-400 text-left max-w-5xl mb-6 space-y-1 text-lg">
       <li>• Time announced out loud, because you forget to check — or that time even exists.</li>
       <li>• Break overwhelming tasks into manageable steps with AI.</li>
       <li>• Stay focused with virtual body doubling.</li>
@@ -55,68 +53,60 @@
     </ul>
 
     <!-- Action Buttons -->
-    <div class="flex flex-row gap-4 w-full max-w-2xl">
-
-      <!-- Web App Button -->
+    <div class="flex flex-row gap-4 w-full max-w-2xl mb-8">
       <a href="https://timesync-fb48f.web.app"
-         class="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-lg">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+         class="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all transform hover:scale-105 shadow-lg">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
         </svg>
-        Go to Web App
+        Web App
       </a>
-
-      <!-- iOS Button -->
       <a href="#"
-         class="flex-1 bg-gradient-to-r from-sky-500 to-blue-500 hover:from-sky-400 hover:to-blue-400 text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-lg">
-        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+         class="flex-1 bg-gradient-to-r from-sky-500 to-blue-500 hover:from-sky-400 hover:to-blue-400 text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all transform hover:scale-105 shadow-lg">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
           <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
         </svg>
-        Download for iOS
+        iOS
       </a>
-
-      <!-- Android Button -->
       <a href="#"
-         class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-lg">
-        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+         class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all transform hover:scale-105 shadow-lg">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
           <path d="M17.523 15.34l1.65-2.86a.5.5 0 00-.18-.68l-.008-.004a.5.5 0 00-.68.18l-1.67 2.89a6.52 6.52 0 00-2.63-.55 6.52 6.52 0 00-2.63.55l-1.67-2.89a.5.5 0 00-.68-.18l-.008.004a.5.5 0 00-.18.68l1.65 2.86a6.39 6.39 0 00-3.39 5.66h13.5a6.39 6.39 0 00-3.39-5.66zM9 19a1 1 0 110-2 1 1 0 010 2zm6 0a1 1 0 110-2 1 1 0 010 2z"/>
         </svg>
-        Download for Android
+        Android
       </a>
     </div>
 
     <!-- Features -->
-    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl">
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 text-center">
-        <div class="text-3xl mb-3">🔊</div>
-        <h3 class="font-semibold text-lg mb-2">Voice Reminders</h3>
-        <p class="text-slate-400 text-sm">Announces the time so you never lose track of it. Because for ADHD brains, time passes without warning.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl">
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-4 text-center">
+        <div class="text-2xl mb-2">🔊</div>
+        <h3 class="font-semibold mb-1">Voice Reminders</h3>
+        <p class="text-slate-400 text-sm">Announces the time so you never lose track.</p>
       </div>
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 text-center">
-        <div class="text-3xl mb-3">✨</div>
-        <h3 class="font-semibold text-lg mb-2">AI Task Breakdown</h3>
-        <p class="text-slate-400 text-sm">Break overwhelming tasks into small, manageable steps with Claude AI.</p>
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-4 text-center">
+        <div class="text-2xl mb-2">✨</div>
+        <h3 class="font-semibold mb-1">AI Task Breakdown</h3>
+        <p class="text-slate-400 text-sm">Break tasks into manageable steps.</p>
       </div>
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 text-center">
-        <div class="text-3xl mb-3">👥</div>
-        <h3 class="font-semibold text-lg mb-2">Body Doubling</h3>
-        <p class="text-slate-400 text-sm">Virtual focus sessions with an AI companion to help you stay on task.</p>
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-4 text-center">
+        <div class="text-2xl mb-2">👥</div>
+        <h3 class="font-semibold mb-1">Body Doubling</h3>
+        <p class="text-slate-400 text-sm">Virtual focus sessions with AI.</p>
       </div>
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 text-center">
-        <div class="text-3xl mb-3">📓</div>
-        <h3 class="font-semibold text-lg mb-2">Brain Dump Journal</h3>
-        <p class="text-slate-400 text-sm">Get thoughts out of your head and onto the page. Relax without forgetting.</p>
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-4 text-center">
+        <div class="text-2xl mb-2">📓</div>
+        <h3 class="font-semibold mb-1">Brain Dump Journal</h3>
+        <p class="text-slate-400 text-sm">Get thoughts out of your head.</p>
       </div>
     </div>
 
   </div>
 
-  <!-- Footer -->
-  <footer class="text-center py-8 text-slate-500 text-sm">
+  <footer class="text-center py-4 text-slate-500 text-sm">
     <p>&copy; 2025 TimeRemind. Built for ADHD brains.</p>
   </footer>
 
-  <!-- Rotating Quotes Script -->
   <script>
     const quotes = [
       `"I'll just do this one quick thing..." *3 hours later*`,
@@ -166,13 +156,12 @@
 
     function showNextQuote() {
       quoteElement.style.animation = 'none';
-      quoteElement.offsetHeight; // Trigger reflow
+      quoteElement.offsetHeight;
       currentIndex = Math.floor(Math.random() * quotes.length);
       quoteElement.textContent = quotes[currentIndex];
       quoteElement.style.animation = 'fadeInOut 4s ease-in-out';
     }
 
-    // Change quote every 4 seconds
     setInterval(showNextQuote, 4000);
   </script>
 
