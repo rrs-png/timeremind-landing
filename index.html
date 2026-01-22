@@ -157,7 +157,7 @@
     function showNextQuote() {
       quoteElement.style.animation = 'none';
       quoteElement.offsetHeight;
-      currentIndex = Math.floor(Math.random() * quotes.length);
+      let newIndex; do { newIndex = Math.floor(Math.random() * quotes.length); } while (newIndex === currentIndex); currentIndex = newIndex;
       quoteElement.textContent = quotes[currentIndex];
       quoteElement.style.animation = 'fadeInOut 4s ease-in-out';
     }
